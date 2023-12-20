@@ -1,1 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
 
+.quiz-component {
+    border-radius: 5px;
+    padding: 8px 15px;
+    border: 2px solid #e6e6e6;
+    font-family: 'Poppins', sans-serif;
+    width: 50%;
+    justify-content: center;
+    margin:auto;
+}
+
+.quiz-component input[type="checkbox"] {
+    display: none; /* Hide the checkbox */
+}
+
+.quiz-component label {
+    display: block;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    padding: 8px 15px;
+    border: 2px solid #e6e6e6;
+    transition: all 0.2s ease;
+    cursor: pointer; /* Change cursor to pointer */
+}
+
+.quiz-component input[type="checkbox"]:checked + label {
+    background-color: #4CBB17; /* Change background color when checked */
+    color: white; /* Change text color when checked */
+}
+
+
+
+/* CSS */
+button {
+background-color: #4CBB17;
+border-radius: 12px;
+color: #ffffff;
+cursor: pointer;
+font-weight: bold;
+padding: 10px 15px;
+text-align: center;
+transition: 200ms;
+width: 100%;
+box-sizing: border-box;
+border: 0;
+font-size: 16px;
+user-select: none;
+-webkit-user-select: none;
+touch-action: manipulation;
+}
+
+button:not(:disabled):hover,
+button:not(:disabled):focus {
+outline: 0;
+background: #4CBB17;
+box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.2), 0 3px 8px 0 rgba(0, 0, 0, 0.15);
+}
+
+button:disabled {
+filter: saturate(0.2) opacity(0.5);
+-webkit-filter: saturate(0.2) opacity(0.5);
+cursor: not-allowed;
+}
